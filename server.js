@@ -41,7 +41,7 @@ app.use('/api/v1/bootcamps',bootcampRouter);
 app.use('/api/v1/courses',courseRouter);
 app.use('/api/v1/auth',authRouter);
 
-
+app.get('/',(req,res)=>res.json({message:'hello'}));
 
 //error handler middleware
 app.use(errorHandler);
